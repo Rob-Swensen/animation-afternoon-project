@@ -1,38 +1,239 @@
-.App {
-  text-align: center;
+.main-div {
+  background-image: url('https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 79vh;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-header {
+  height: 100px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  position: fixed;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-logo {
+  font-family: 'Lobster', cursive;
+  font-style: italic;
+  font-size: 25px;
+  padding-left: 180px;
+  color: #edc618
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dropdown-toggle {
+  display: none;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding-right: 180px;
+  color: #e0e0e0;
+  letter-spacing: 1px;
+}
+
+.nav-list-item {
+  padding-right: 20px;
+  margin: 10px;
+  font-weight: 470;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.text-box-1 {
+  font-size: 40px;
+  font-family: serif;
+  font-style: italic;
+  margin: 10px;
+  font-weight: 600;
+}
+
+.text-box-2 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 75px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.button {
+  width: 220px;
+  height: 65px;
+  border-radius: 5px;
+  border: none;
+  background-color: #edc618;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 50px;
+}
+
+.services {
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services-text-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 75px;
+  box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+.lorem-ipsum {
+  font-size: 19px;
+  text-transform: none;
+  font-style: italic;
+  font-family: serif;
+  color: #828282;
+  font-weight: 300;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.three-boxes{
+  width: 60%;
+  height: 300px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-box img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%
+}
+
+.service-box {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+
+.dummy-text {
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  color: #7a7a7a
+}
+
+@media (max-width: 991px) {
+  .nav-list {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .dropdown-toggle{
+    display: initial;
+    background-color: #edc618;
+    width: 10vw;
+    height: 5vh;
+    margin-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-logo {
+    margin-left: 0px;
+  }
+
+  .main-div {
+    word-wrap: break-word;
+  }
+  .mobile-links {
+    width: 10vw;
+    position: absolute;
+    right: 40px;
+    top: 70px;
+    background-color: #edc618;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 0 0 5px 5px;
+  }
+
+  .mobile-links p:hover {
+    color: black;
+  }
+  .text-box-2 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 827px){
+  .dropdown-toggle {
+    width: 15vw;
+    margin-right: 100px;
+  }
+  .mobile-links {
+    width: 15vw;
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 640px) {
+  .text-box-2 {
+    font-size: 40px;
+  }
+  .text-box-1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .nav-list {
+    display: none;
+  }
+
+  .dropdown-toggle {
+    display: initial;
+    background-color: #edc618;
+    padding: 10px;
+  }
+
+  .mobile-links {
+    display: initial;
+    width: 100vw;
   }
 }
